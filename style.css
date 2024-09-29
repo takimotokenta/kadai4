@@ -1,0 +1,319 @@
+@charset "UTF-8";
+
+a {
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.7;
+}
+img {
+    max-width: 100%;
+}
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sec-title{
+    color: #182AB2;
+    font-size: 88px;
+    padding-top: 100px;
+    margin: 0;
+}
+
+.wrapper {
+    margin: 0 auto 130px auto;
+    padding: 0 4%;
+  }
+
+.more-border{
+    align-items: center; /* 横線を上下中央 */
+    display: flex; /* 文字と横線を横並び */
+    
+}
+.more-border::after {
+  background-color: black; /* 横線の色 */
+  content: "";
+  height: 1px; /* 横線の高さ */
+  width: 100px; /* 横線の長さ */
+}
+.more-border::after {
+  margin-left: 15px; /* 文字との余白 */
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header{
+    background-image: url(image/fv.png);
+    background-size: cover;
+    color: white;
+    height: 760px;
+}
+
+.company-logo{
+    font-size: 40px;
+}
+
+#header a{
+    color: white;
+}
+
+#header-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 30px;
+}
+
+#header-head ul{
+    display: flex;
+    padding: 10px 0;
+}
+
+#header-head li{
+    margin-left: 30px;
+}
+
+#header-head li .image{
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#000F7D;
+}
+
+#header-main{
+    padding: 150px 250px;
+}
+
+#header-main h1{
+    font-size: 55px;
+}
+
+/*-------------------------------------------
+About
+-------------------------------------------*/
+#about{
+    text-align: center;
+}
+
+/*-------------------------------------------
+Product
+-------------------------------------------*/
+#product{
+    background-image: url(image/product_bg.png);
+    background-size: cover;
+}
+
+#product img{
+    height: 348px;
+}
+
+#product ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+#product li{
+    width: 30%;
+}
+
+/*-------------------------------------------
+Service
+-------------------------------------------*/
+#service ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+#service li{
+    width: 45%;
+}
+
+/*-------------------------------------------
+Company
+-------------------------------------------*/
+#company{
+    background-color: #182AB2;
+    color: white;
+    width: 75%;
+    margin: 0 0 0 auto;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+#company .sec-title{
+    color: white;
+}
+.company-image{
+    width: 40%;
+    margin: auto 0 auto -25%;
+}
+
+.company-main{
+    padding-left: 30px;
+}
+
+#company .more-border::after {
+    background-color: white; /* 横線の色 */
+  }
+
+/*-------------------------------------------
+News
+-------------------------------------------*/
+ ul.news_list li:first-child{
+    border-top:1px solid #000F7D;
+ }
+ ul.news_list li{
+   border-bottom:1px solid #000F7D;
+   padding-top:20px;
+   padding-bottom:20px;
+ }
+
+#news a{
+    color: #000F7D;
+}
+  
+ .news_thumbnail{
+    display:inline-block;
+    width:20%;
+    vertical-align:top;
+ }
+ 
+ .news_content_box{
+    display:inline-block;
+    width:70%;
+    padding-left:20px;
+ }
+
+.news_date{
+    display:inline-block;
+}
+
+.news_title{
+    display:inline-block;
+}
+
+.arrow{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+.arrow::before,
+.arrow::after{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	content: "";
+	vertical-align: middle;
+}
+
+.sample5-6::before{
+	box-sizing: border-box;
+	width: 80px;
+	height: 80px;
+	border: 1px solid #000F7D;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.sample5-6::after{
+	left: 20px;
+	width: 20px;
+	height: 20px;
+	border-top: 1px solid #000F7D;
+	border-right: 1px solid #000F7D;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/*-------------------------------------------
+Contact
+-------------------------------------------*/
+#contact{
+    display: flex;
+    background-color: #EEEEEE;
+    margin-bottom: 0;
+    padding-right: 0;
+}
+
+#contact .sec-title{
+    font-size: 60px;
+}
+
+.contact-main{
+    width: 50%;
+}
+
+.contact-image{
+    width: 50%;
+    background-image: url(image/contact_bg.png);
+    background-size: cover;
+}
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+footer{
+    background-color: #182AB2;
+    color: white;
+}
+
+footer a{
+    color: white;
+}
+
+.footer-contents{
+    display: flex;
+}
+
+.footer-main{
+    width: 50%;
+}
+
+.footer-nav{
+    width: 40%;
+}
+
+.footer-nav,.footer-nav td{
+    border: none !important;
+}
+
+.arro{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+.arro::before,
+.arro::after{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	content: "";
+	vertical-align: middle;
+}
+
+.sample6-6::before{
+	box-sizing: border-box;
+	width: 80px;
+	height: 80px;
+	border: 1px solid white;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.sample6-6::after{
+	left:30px;
+	width: 20px;
+	height: 20px;
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
