@@ -18,7 +18,7 @@ li {
 .sec-title{
     color: #182AB2;
     font-size: 88px;
-    padding-top: 50px;
+    padding-top: 100px;
     margin: 0;
 }
 
@@ -164,13 +164,13 @@ Company
     color: white;
     width: 75%;
     margin: 0 0 0 auto;
-    height: 700px;
+    padding: 100px;
     display: flex;
-    align-items: center;
 }
 
 #company .sec-title{
     color: white;
+    padding-top: 0;
 }
 .company-image{
     width: 65%;
