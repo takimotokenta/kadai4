@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+*, *:before, *:after {
+        box-sizing: border-box;
+    }
+
 a {
     text-decoration: none;
 }
@@ -49,7 +53,6 @@ li {
     background-image: url(image/fv.png);
     background-size: cover;
     color: white;
-    height: 760px;
 }
 
 .company-logo{
@@ -70,10 +73,14 @@ li {
 }
 
 #header-head{
+    position:fixed;
+    width: 100%;
+    min-width: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding:0 30px;
+    background:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0));
 }
 
 #header-head ul{
@@ -96,7 +103,7 @@ li {
 }
 
 #header-main{
-    padding: 150px 250px;
+    padding: 300px 250px 200px 250px;
 }
 
 #header-main h1{
@@ -117,7 +124,7 @@ Product
 #product{
     background-image: url(image/product_bg.png);
     background-size: cover;
-    height: 820px;
+    padding-bottom: 100px;
 }
 
 #product img{
@@ -160,12 +167,20 @@ Service
 Company
 -------------------------------------------*/
 #company{
-    background-color: #182AB2;
     color: white;
-    width: 75%;
-    margin: 0 0 0 auto;
-    padding: 100px;
+    padding: 100px 0 100px 0;
     display: flex;
+    position:relative;
+}
+
+.background-blue {
+    position: absolute;
+    background-color: #182AB2;
+    top: 0;
+    bottom: 0;
+    width: 85%;
+    margin-left: 15%;
+    z-index: -1;
 }
 
 #company .sec-title{
@@ -173,13 +188,15 @@ Company
     padding-top: 0;
 }
 .company-image{
-    width: 65%;
-    margin: auto 0 auto -30%;
+    width: 50%;
+    margin: auto 50px auto 0;
 }
 
 .company-main{
-    padding-left: 80px;
+    width: 50%;
     line-height: 2;
+    padding-right: 50px;
+
 }
 
 #company .more-border::after {
@@ -205,18 +222,22 @@ ul.news_list li:first-child{
 #news a{
     color: #000F7D;
 }
+
+.news_contents{
+    display: flex;
+}
   
- .news_thumbnail{
-    display:inline-block;
-    width:20%;
+.news_img{
+    width:25%;
     vertical-align:top;
-    margin: auto 50px;
+    margin: auto;
+    padding: 0 50px;
  }
  
  .news_content_box{
-    display:inline-block;
-    width:60%;
+    width:65%;
     line-height: 2;
+    margin-right: 30px;
  }
 
 .news_date{
@@ -230,10 +251,6 @@ ul.news_list li:first-child{
     padding-left: 30px;
 }
 
-.news_infoabs{
-    margin: 0 40px 0 0;
-}
-
 #news .more-border{
     padding-right: 50px;
     margin-top: -30px;
@@ -244,13 +261,13 @@ ul.news_list li:first-child{
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
+    width:10%;
 }
 .arrow::before,
 .arrow::after{
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	left: 0;
 	margin: auto;
 	content: "";
 	vertical-align: middle;
@@ -282,7 +299,6 @@ Contact
     background-color: #EEEEEE;
     margin-bottom: 0;
     padding-right: 0;
-    height: 450px;
 }
 
 #contact .sec-title{
@@ -291,7 +307,6 @@ Contact
 
 .contact-main{
     width: 50%;
-    padding-left: 30px;
 }
 
 .contact-main .tel{
